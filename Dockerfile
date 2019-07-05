@@ -39,3 +39,5 @@ RUN set -e;\
   asdf plugin-add gradle;\
   asdf install gradle "${GRADLE_VERSION}";\
   asdf global gradle "${GRADLE_VERSION}";
+
+ENV JAVA_HOME=/docker/.asdf/installs/java/${JAVA_VERSION}
